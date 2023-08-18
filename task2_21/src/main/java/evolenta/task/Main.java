@@ -13,9 +13,9 @@ public class Main {
         String line = in.nextLine();
         System.out.println("Введите подстроку ");
         String littleLine = in.nextLine();
-        System.out.println("Число вхождений подстроки в строке "+ (line.split(littleLine,0).length-1));
+        System.out.println("Число вхождений подстроки в строке "+ (line.split(littleLine,-1).length-1));
         //4.2
-        System.out.println("4.2 Введите строку ");
+/*        System.out.println("4.2 Введите строку ");
         String lineStr = in.nextLine();
         String lineNoByaka = lineStr.replaceAll("бяка", "вырезано цензурой");
         String clearLine = lineNoByaka.replaceAll("кака", "вырезано цензурой");
@@ -35,6 +35,6 @@ public class Main {
             System.out.println(result);
         } catch (ParseException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 }
